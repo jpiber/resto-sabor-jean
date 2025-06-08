@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restô Sabor - Cardápio Digital</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
@@ -81,6 +82,14 @@
 
         .menu-item:hover {
             transform: translateY(-5px);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
         }
 
         .menu-item h3 {
@@ -175,24 +184,34 @@
             <h2>Cardápio</h2>
             <div class="menu-grid">
                 <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Filé à Parmegiana">
                     <h3>Filé à Parmegiana</h3>
                     <p>Filé empanado com molho de tomate, queijo mussarela e parmesão</p>
                     <p class="price">R$ 45,90</p>
                 </div>
                 <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Risoto de Camarão">
                     <h3>Risoto de Camarão</h3>
                     <p>Arroz arbóreo com camarões e ervas finas</p>
                     <p class="price">R$ 52,90</p>
                 </div>
                 <div class="menu-item">
+                    <img src="https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg" alt="Salada Caesar">
                     <h3>Salada Caesar</h3>
-                    <p>Alface romana, croutons, parmesão e molho caesar</p>
-                    <p class="price">R$ 32,90</p>
+                    <p>Alface romana, frango grelhado, croutons, queijo parmesão e molho caesar</p>
+                    <span class="price">R$ 32,90</span>
                 </div>
                 <div class="menu-item">
-                    <h3>Penne ao Molho Pesto</h3>
-                    <p>Massa com molho de manjericão, pinoli e parmesão</p>
-                    <p class="price">R$ 38,90</p>
+                    <img src="https://images.pexels.com/photos/6287525/pexels-photo-6287525.jpeg" alt="Risoto de Cogumelos">
+                    <h3>Risoto de Cogumelos</h3>
+                    <p>Arroz arbóreo, mix de cogumelos, cebola, alho, vinho branco e queijo parmesão</p>
+                    <span class="price">R$ 45,90</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg" alt="Pizza Margherita">
+                    <h3>Pizza Margherita</h3>
+                    <p>Molho de tomate, mussarela, tomate cereja, manjericão e azeite</p>
+                    <span class="price">R$ 49,90</span>
                 </div>
             </div>
         </section>
