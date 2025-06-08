@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restô Sabor - Cardápio Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #4ecdc4;
+            --background-color: #f7f7f7;
+            --text-color: #2d3436;
+            --card-background: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: var(--card-background);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .menu-section {
+            background: var(--card-background);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .menu-item {
+            background: var(--background-color);
+            padding: 1.5rem;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .price {
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #25d366;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.05);
+        }
+
+        .whatsapp-button i {
+            font-size: 1.5rem;
+        }
+
+        .info-section {
+            background: var(--card-background);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .info-card {
+            padding: 1.5rem;
+        }
+
+        .info-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Restô Sabor</h1>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Restô Sabor</h1>
+            <p>Culinária autêntica com sabor caseiro</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="menu-section">
+            <h2>Cardápio</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Filé à Parmegiana</h3>
+                    <p>Filé empanado com molho de tomate, queijo mussarela e parmesão</p>
+                    <p class="price">R$ 45,90</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Risoto de Camarão</h3>
+                    <p>Arroz arbóreo com camarões e ervas finas</p>
+                    <p class="price">R$ 52,90</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Salada Caesar</h3>
+                    <p>Alface romana, croutons, parmesão e molho caesar</p>
+                    <p class="price">R$ 32,90</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Penne ao Molho Pesto</h3>
+                    <p>Massa com molho de manjericão, pinoli e parmesão</p>
+                    <p class="price">R$ 38,90</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>Informações</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Segunda a Sábado: 11h às 23h</p>
+                    <p>Domingo: 11h às 16h</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Endereço</h3>
+                    <p>Rua das Flores, 123</p>
+                    <p>Centro - Porto Alegre/RS</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Contato</h3>
+                    <p>(51) 3333-4444</p>
+                    <p>contato@restosabor.com</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <a href="https://wa.me/5551999999999" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        Fazer Pedido
+    </a>
+</body>
+</html> 
